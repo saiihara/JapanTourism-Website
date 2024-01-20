@@ -1,0 +1,697 @@
+/*******************HEADER******************/
+
+header{
+    width:100%;
+    height:80vh;
+
+    overflow: hidden;
+}
+
+.hamburguer-il:nth-child(2){
+    font-weight: 600;
+  }
+  
+
+.description-header{
+    height:20vh;
+    padding:0 30px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-header p{
+    font-size: clamp(1.3rem, 1.0667rem + 0.7778vw, 2rem);
+    font-weight: 600;
+}
+
+.hero-text h1:last-child {
+    margin-top: 0;
+    padding:0 30px;
+}
+
+.hero-text{
+    height:100%;
+    box-sizing: border-box;
+    display: flex;
+    margin:0;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(2rem, 1.8333rem + 0.5556vw, 2.5rem);
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+
+    font-family: var(--TitleFont);
+}
+
+.layer1 {
+    background-image: url("../assets/photos/fujilake.jpg");
+}
+
+
+/******************* OPTIONS ******************/
+
+.options-container{
+    height:100vh;
+    width:100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.options{
+    height:100%;
+    width:90%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options-text{
+    flex:1;
+    height:100%;
+    width:100%;
+
+    display:flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+    padding:70px;
+    box-sizing: border-box;
+}
+
+.plane{
+    flex:1;
+    height:100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plane-photo{
+    min-width: 500px;
+    min-height: 500px;
+    border-radius: 50%;
+
+    background: url("../assets/photos/planeflying.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.plane-photo:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.options-text h1{
+    font-size: var(--sizeTitle);
+    font-family: var(--TitleFont);
+    color: var(--Purple);
+    font-weight: 300;
+}
+
+.options-text span{
+    font-weight: 600;
+}
+
+
+/******************* AIRLINES ******************/
+
+.airlines-container{
+    min-height:190vh;
+    width:100%;
+
+    box-sizing: border-box;
+
+    padding:80px;
+
+    background: url("../assets/photos/sakurariver.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center
+}
+
+.item-text p:first-child{
+    font-size: clamp(1rem, 0.8667rem + 0.4444vw, 1.4rem);
+    font-weight: 600;
+    color: var(--redLike);
+}
+
+.airlines{
+    height:100%;
+    width:100%;
+
+    display: flex;
+    flex-flow:column nowrap;
+
+    box-sizing: border-box;
+}
+
+.airlines-title{
+    margin-bottom:30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.airlines-title h1{
+    font-family: var(--TitleFont);
+    font-size: var(--sizeTitle);
+    color: var(--redLike);
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+
+.items-airlines {
+
+    flex:2;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-air {
+    flex: 1 0 calc(33.33% - 10px); 
+    min-height: 550px;
+    max-height: 550px;
+    box-sizing: border-box;
+    margin: 5px;
+
+    background-color: #fcf5fc;
+    box-shadow: rgba(246, 150, 255, 0.35) 0px 5px 15px;
+}
+
+.item-text p, .list-item li, .item-details a, .text-pet, .text-star{
+    font-size: clamp(0.8rem, 0.7333rem + 0.2222vw, 1rem);
+}
+
+.item-text p{
+    padding:0;
+    margin:0;
+    margin-top:15px;
+}
+
+.item-content {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:380px;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.item-air:first-child .photo-item-air{
+    box-sizing: border-box;
+    min-height:150px;
+    width:100%;
+
+    background: url("../assets/photos/japanairlines.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.item-air:nth-child(2) .photo-item-air{
+    box-sizing: border-box;
+    min-height:150px;
+    width:100%;
+
+    background: url("../assets/photos/ana.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.item-air:nth-child(3) .photo-item-air{
+    box-sizing: border-box;
+    min-height:150px;
+    width:100%;
+
+    background: url("../assets/photos/ryanair.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.item-air:nth-child(4) .photo-item-air{
+    box-sizing: border-box;
+    min-height:150px;
+    width:100%;
+
+    background: url("../assets/photos/airasia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.item-air:nth-child(5) .photo-item-air{
+    box-sizing: border-box;
+    min-height:150px;
+    width:100%;
+
+    background: url("../assets/photos/emirates.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.item-air:nth-child(6) .photo-item-air{
+    box-sizing: border-box;
+    min-height:150px;
+    width:100%;
+
+    background: url("../assets/photos/airchina.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.item-extra{
+    display:flex;
+    align-items: center;
+
+    margin-left:35px;
+}
+
+.item-pet, .item-star{
+    border:1px solid black;
+    padding:0px 8px;
+    border-radius: 15px;
+}
+
+.item-pet{
+    margin-right:20px;
+}
+.text-pet, .text-star{
+    padding:5px;
+    margin:0;
+}
+
+.pet-photo-container, .star-photo-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pet-photo{
+    min-width:16px;
+    min-height:16px;
+
+    background: url("../assets/photos/pet.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center center;
+}
+
+.star-photo{
+    min-width:15px;
+    min-height:15px;
+
+    background: url("../assets/photos/star.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center center;
+}
+
+.list-item ul li{
+    list-style-image: url("../assets/photos/sakuraicon.png");
+}
+
+.item-details {
+    margin-top: auto;
+}
+
+.item-details a {
+    position: relative;
+    text-decoration: none;
+}
+
+.item-details a span {
+    display: inline-block;
+    position: relative;
+}
+
+.item-details a span::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: var(--Pink);
+    transition: all 0.3s ease;
+}
+
+.item-details a:hover span::after {
+    width: 100%;
+}
+
+.item-details a span:hover{
+    color:red;
+}
+
+.item-pet, .item-star {
+    position: relative;
+    overflow: hidden;
+}
+
+.item-pet, .item-star {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/******************* ALTERNATIVES ******************/
+.title-alternatives{
+    margin: 150px 70px 30px;
+    font-family: var(--TitleFont);
+    color: var(--Purple);
+    font-size: var(--sizeTitle);
+
+}
+
+.text-alternatives h1{
+    color: var(--Purple);
+    font-size: clamp(1.5rem, 1.3333rem + 0.5556vw, 2rem);
+}
+
+.alternatives-container{
+    display: flex;
+    min-height: 120vh;
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.alternatives{
+    width: 100%;
+}
+
+.part-alternatives{
+    height:50%;
+    display:flex;
+}
+
+.photo-alternatives-kj, .photo-alternatives-cj, .text-alternatives{
+    flex:1;
+}
+
+.text-alternatives{
+    display:flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.text-alt{
+    padding:50px;
+    box-sizing: border-box;
+}
+
+
+.part-alternatives:first-child .text-alternatives{
+    text-align: right;
+}
+
+.photo-alternatives-kj .photo-alt {
+    height:100%;
+
+    background: url("../assets/photos/coreatojapan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.photo-alternatives-cj .photo-alt {
+    height:100%;
+
+    background: url("../assets/photos/chinacoreatojapan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.part-alternatives:last-child .photo-alternatives-kj,
+.part-alternatives:last-child .photo-alternatives-cj{
+    order:2;
+}
+
+.photo-alt:hover{
+    cursor:pointer;
+}
+
+/******************* SEASONS ******************/
+
+.haru{
+    width:100%;
+    height:100%;
+
+    background: url("../assets/photos/sakura.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+
+}
+
+.natsu{
+    width:100%;
+    height:100%;
+
+    background: url("../assets/photos/hanabi.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+
+}
+
+.aki{
+    width:100%;
+    height:100%;
+
+    background: url("../assets/photos/japanautumn.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+
+}
+
+.fuyu{
+    width:100%;
+    height:100%;
+
+    background: url("../assets/photos/japanesewinter.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+
+}
+
+.container-seasons {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container-seasons div {
+    flex: 1;
+    transition: flex 0.5s;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-seasons div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s;
+}
+
+.container-seasons div:hover {
+    flex: 3;
+}
+
+.container-seasons .haru:hover::before,
+.container-seasons .natsu:hover::before,
+.container-seasons .aki:hover::before,
+.container-seasons .fuyu:hover::before{
+    background: rgba(0, 0, 0, 0.61);
+}
+
+.text-seasons{
+    box-sizing: border-box;
+}
+
+.container-seasons div .text-seasons {
+    position: relative;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-seasons div:hover .text-seasons {
+    animation: fadeIn 0.5s 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.text-seasons p:first-child{
+    color:pink;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.text-seasons span{
+    font-weight: 600;
+}
+
+.text-seasons{
+    padding:20px;
+    box-sizing: border-box;
+}
+
+/******************* VIDEO ******************/
+
+.video-sakura-container {
+    margin-bottom: 150px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+  }
+  
+
+  .sakura-video {
+    height:100%;
+    width:100%;
+    
+    background-image: url('../assets/photos/videonotloaded.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+  #myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1f1f1;
+    font-size: clamp(1.5rem, 1.3333rem + 0.5556vw, 2rem);
+    text-align: center;
+    font-weight: 600;
+    font-family: var(--JapaneseFont);
+
+    text-shadow: 0px 0px 6px rgba(255, 91, 233, 0.7);
+  }
+
+  /******************* MEDIA QUERIES ******************/
+
+  @media screen and (max-width: 1050px){
+    
+    .plane{
+       display:none;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    
+    .alternatives{
+        display:flex;
+        flex-flow: column nowrap;
+    }
+
+    .part-alternatives {
+        height: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .where-stay-container{
+        margin-bottom:80px;
+    }
+
+    .alternatives-container {
+        display: flex;
+        height: 300vh; 
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .alternatives:first-child .photo-alternatives-kj {
+        order: 2;
+    }
+
+    .alternatives:first-child .text-alt {
+        text-align: left;
+    }
+
+    .container-seasons {
+        height: auto; 
+        flex-flow: column nowrap;
+    }
+
+    .container-seasons div:hover {
+        flex: 1;
+    }
+
+    .container-seasons div:hover .text-seasons {
+       opacity: 1;
+       animation: none;
+    }
+
+    .text-seasons p:first-child {
+        padding:0;
+        margin:0;
+    }
+
+    .text-seasons{
+        padding:50px;
+    }
+
+ 
+}
+
+@media screen and (max-width: 450px){
+    
+    .options-text {
+        padding: 30px;
+    }
+}
+

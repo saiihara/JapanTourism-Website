@@ -1,0 +1,923 @@
+/*******************HEADER******************/
+
+
+header{
+    width:100%;
+    height:80vh;
+
+    overflow: hidden;
+}
+
+.hamburguer-il:nth-child(4){
+    font-weight: 600;
+  }
+  
+
+.description-header{
+    height:20vh;
+    padding:0 30px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom:70px;
+}
+
+.description-header p{
+    font-size: clamp(1.3rem, 1.0667rem + 0.7778vw, 2rem);
+    font-weight: 600;
+}
+
+.hero-text h1:last-child {
+    margin-top: 0;
+    padding:0 30px;
+}
+
+.hero-text{
+    height:100%;
+    box-sizing: border-box;
+    display: flex;
+    margin:0;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(2rem, 1.8333rem + 0.5556vw, 2.5rem);
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+
+    font-family: var(--TitleFont);
+}
+
+.layer1 {
+    background-image: url("../assets/photos/tojilakesunset.png");
+    background-position: center 30%;
+}
+
+
+/******************* SLIDER - OFFICES ******************/
+
+.slider-offices-container{
+    min-height:60vh;
+    width:90%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 5px;
+
+
+
+    background: var(--BlackGradient);
+    color:white;
+
+}
+
+.slider-offices{
+    box-sizing: border-box;
+    padding:70px;
+
+    min-height:60vh;
+    width:100%;
+}
+
+
+.slide, .slide2, .slide3{
+     min-height:60vh;
+    width:100%;
+    display:none;
+
+}
+
+.slide, .slide2, .slide3 {
+    display: none;
+    transition: all 3s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0
+      ;
+    }
+    33% {
+        opacity: 0.3;
+      }
+    66% {
+        opacity: 0.8;
+      }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0
+        ;
+      }
+      33% {
+          opacity: 0.3;
+        }
+      66% {
+          opacity: 0.8;
+        }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+  }
+  
+  .slide, .slide2, .slide3 {
+      animation-duration: 0.5s;
+  }
+
+.slide.active, .slide2.active, .slide3.active {
+    display: flex;
+}
+
+.content{
+    flex:2;
+}
+
+.xf{
+    min-width:20px;
+    min-height:20px;
+  
+    margin-right:10px;
+  
+    background-image: url("../assets/photos/twitter.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+    transition: all .3s ease-in;
+  }
+  
+  .ins{
+    min-width:20px;
+    min-height:20px;
+  
+    margin-right:10px;
+  
+    background-image: url("../assets/photos/instagram.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+    transition: all .3s ease-in;
+  }
+  
+  .face{
+    min-width:20px;
+    min-height:20px;
+  
+    background-image: url("../assets/photos/facebook.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+    transition: all .3s ease-in;
+  }
+
+  .xf:hover, .ins:hover, .face:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+.photo-office1{
+    flex:1;
+
+     background-image: url("../assets/photos/oficina.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.photo-office2{
+    flex:1;
+
+     background-image: url("../assets/photos/office2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.photo-office3{
+    flex:1;
+
+     background-image: url("../assets/photos/office3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.dots-office{
+    width:100%;
+    height:30px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot{
+    height:10px;
+    width:10px;
+    margin-left:5px;
+    background-color: grey;
+    border-radius: 50%;
+
+    cursor:pointer;
+} 
+
+
+.content{
+    padding-right:30px;
+    box-sizing: border-box;
+}
+
+.data1, .data2, .data3{
+    display:flex; 
+    align-items: center;
+}
+
+.data, .photo-data-map{
+    height:20px;
+    width:20px;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/map.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+}
+
+.data, .photo-data-cal{
+    height:15px;
+    width:15px;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/calendar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+}
+
+.data, .photo-data-lang{
+    height:22px;
+    width:22px;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/language.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.see-details{
+    margin-top: auto;
+
+    color:rgb(243, 206, 212);
+    width: 30%;
+}
+
+.see-details a{
+    color:rgb(255, 192, 255);
+}
+
+.social-media-office{
+    margin-top:20px;
+    display:flex;
+    align-items: center;
+}
+
+.content h1{
+    font-size: clamp(1.5rem, 1.8333rem + 0.5556vw, 2rem);
+    color: var(--Pink);
+}
+
+.content{
+    display:flex;
+    flex-flow: column nowrap;
+
+    font-size: clamp(0.9rem, 0.8333rem + 0.2222vw, 1.1rem);
+}
+
+
+.dot.active {
+    height: 12px;  
+    width: 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+.see-details  a span {
+    display: inline-block;
+    position: relative;
+}
+
+.see-details a span::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: var(--Pink);
+    transition: all .3s;
+}
+
+.see-details:hover a span::after {
+    width: 100%;;
+}
+
+.see-details a:hover{
+   color:rgb(255, 255, 255);
+}
+
+/******************* MAP ******************/
+
+iframe{
+    margin:100px 0;
+}
+
+/******************* NUMBERS ******************/
+
+#container-numbers{
+    border:1px solid var(--Purple);
+    width:80%;
+    min-height:40vh;
+    margin: 0 auto;
+    padding:70px;
+    box-sizing: border-box;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    border-radius: 50vh;
+
+    margin-bottom: 70px;
+
+    box-shadow: rgba(224, 120, 231, 0.1) 0px 8px 24px;
+}
+
+.title-numbers {
+    order: 1; 
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.changing-numbers {
+    order: 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    text-align: center;
+}
+
+
+
+.number p{
+    font-size: clamp(2rem, 1.6667rem + 1.1111vw, 3rem);
+    color: var(--Purple);
+    font-weight: 700;
+    padding:0;
+    margin:0;
+
+}
+
+.description{
+    margin:20px;
+}
+
+.content-numbers{
+    text-align: center;
+}
+
+/******************* CONTACT FORM ******************/
+
+.contact-container{
+    min-height:110vh;
+    width:100%;
+}
+
+.contact{
+    min-height:110vh;
+    width:100%;
+    box-sizing: border-box;
+
+    display:flex;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+    padding:70px;
+
+    
+    position: relative;
+}
+
+.part-contact{
+    flex:1;
+}
+
+.part-contact:last-child{
+    color:white;
+    background: var(--BlackGradient);
+
+    border-radius: 5px;
+    
+}
+
+form{
+    height:100%;
+    box-sizing: border-box;
+    padding:70px;
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+.button-form{
+    margin-top: auto;
+}
+
+.name, .email-form, .telephone, .matter{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+
+    margin-bottom:50px;
+}
+
+.texticon{
+    display:flex;
+}
+
+.name .icon{
+    height:22px;
+    width:22px;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/person.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.email-form .icon{
+    height:22px;
+    width:22px;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/email.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.telephone .icon{
+    height:22px;
+    width:22px;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/tlf.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.matter .icon{
+    height:22px;
+    width:22px;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/text.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+input[type="text"],  textarea {
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent; 
+
+    color:white;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 100%; 
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 1px solid rgb(255, 0, 0);
+
+}
+
+
+
+.tfn-contact{
+    display:flex;
+    align-items: center;
+}
+
+.icon-tfn{
+    height:22px;
+    width:22px;
+    margin-right:15px;
+
+    background-image: url("../assets/photos/tlfblack.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.icon-email{
+    height:22px;
+    width:22px;
+    margin-right:15px;
+
+    background-image: url("../assets/photos/emailblack.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+
+.email-contact{
+    display:flex;
+    align-items: center;
+}
+
+.contact-text p:first-child{
+    font-size: clamp(1.5rem, 1.4rem + 0.3333vw, 1.8rem);
+    color:var(--Purple);
+    font-weight: 600;
+}
+
+.contact .part-contact:first-child {
+    display:flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    box-sizing: border-box;
+    padding:70px;
+}
+
+.sakura1{
+    height:200px;
+    width:200px;
+    position: absolute;
+
+    background-image: url("../assets/photos/1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    left: 0;
+    top: 0;
+    transform: rotate(-90deg);
+
+}
+
+.sakura2{
+    height:200px;
+    width:200px;
+    position: absolute;
+
+    background-image: url("../assets/photos/2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    bottom:0;
+    right:0;
+
+}
+
+
+
+/******************* RECOMMEDNED HOTELS ******************/
+
+.recommended-container{
+    min-height:100vh;
+    width:100%;
+
+    margin:100px 0;
+}
+
+.recommended{
+    min-height:100vh;
+    width:100%;
+
+    display:flex;
+}
+
+.part-rec{
+    box-sizing: border-box;
+}
+
+.part-rec:first-child{
+    flex:1;
+    box-sizing: border-box;
+}
+
+
+.part-rec:last-child{
+    flex:3;
+    border:1px solid var(--redLike);
+    margin-right:70px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+
+.part-rec div.active {
+    display:flex;
+
+    padding:70px;
+    box-sizing: border-box;
+}
+
+.photo-part{
+    flex:1;
+}
+
+
+
+.text-part{
+    padding-right:70px;
+    box-sizing: border-box;
+    flex:1;
+}
+
+
+.weight600{
+    font-weight: 600;
+    color: var(--redLike);
+}
+
+.text-part span{
+    font-weight: 600;
+}
+
+.list-stay{
+    margin-top:40px;
+}
+
+.list-rec li {
+    transition: all 0.5 ease;
+}
+
+
+.part-rec .active {
+    display: block;
+}
+
+.list-rec li.active {
+    font-weight: 600;
+}
+
+.par1-rec .photo-part{
+    min-height:650px;
+
+    background-image: url("../assets/photos/hotels.png");
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.par2-rec .photo-part{
+    min-height:650px;
+
+    background-image: url("../assets/photos/ryokan2.jpg");
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    order:1;
+}
+
+.par3-rec .photo-part{
+    min-height:650px;
+
+    background-image: url("../assets/photos/capsule.jpg");
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.par4-rec .photo-part{
+    min-height:650px;
+
+    background-image: url("../assets/photos/guesthouses.png");
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    order:1;
+}
+
+.par5-rec .photo-part{
+    min-height:650px;
+
+    background-image: url("../assets/photos/airbnb.jpg");
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.par6-rec .photo-part{
+    min-height:650px;
+
+    background-image: url("../assets/photos/minshuku.png");
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    order:1;
+}
+
+.par7-rec .photo-part{
+    min-height:650px;
+
+    background-image: url("../assets/photos/templestay.png");
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.par8-rec .photo-part{
+    min-height:650px;
+
+    background-image: url("../assets/photos/internetcafe.png");
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+
+    order:1;
+}
+
+
+
+
+.par2-rec .text-part{
+    order:2;
+    padding:0;
+    padding-left:70px;
+}
+
+.par4-rec .text-part{
+    order:2;
+    padding:0;
+    padding-left:70px;
+}
+
+.par6-rec .text-part{
+    order:2;
+    padding:0;
+    padding-left:70px;
+}
+
+.par8-rec .text-part{
+    order:2;
+    padding:0;
+    padding-left:70px;
+}
+
+
+.list-rec li{
+    cursor: pointer;
+    margin-bottom:30px;
+
+    list-style-image: url("../assets/photos/sakuraicon.png");
+}
+
+.list-rec{
+    padding:40px;
+}
+
+
+
+@media screen and (max-width:980px){
+
+    .part-rec div.active {
+        display: flex;
+       flex-flow: column;
+    }
+
+    .par1-rec .photo-part,  .par2-rec .photo-part,  .par3-rec .photo-part,  .par4-rec .photo-part,  .par5-rec .photo-part,  .par6-rec .photo-part,  .par7-rec .photo-part,  .par8-rec .photo-part {
+        margin-top:30px;
+        min-height: 300px;
+    }
+
+    .text-part {
+        padding-right:0;
+        box-sizing: border-box;
+        
+    }
+    .par2-rec .text-part, .par4-rec .text-part, .par6-rec .text-part, .par8-rec .text-part {
+        order: 1;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width:700px){
+
+    .recommended {
+        flex-flow: column;
+    }
+
+    .part-rec:last-child {
+        margin: 0 40px;
+    }
+
+    .par1-rec .photo-part {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+ 
+}
+
+
+@media screen and (max-width:670px){
+
+    .photo-office1,  .photo-office2,  .photo-office3{
+        display:none;
+    }
+
+    .slider-offices {
+       display:flex;
+       flex-flow: column;
+    }
+
+    .content {
+        padding-right: 0px;
+    }
+
+    .see-details {
+        width: 100%;
+    }
+
+    .dots-office {
+        margin-top: auto;
+    }
+
+        .slider-offices-container {
+        min-height: 90vh;
+    }
+
+    .slider-offices {
+        min-height: 90vh;
+    }
+ 
+}
+
+@media screen and (max-width:450px){
+
+    .contact {
+        padding: 40px;
+    }
+
+
+    .sakura1 {
+        height: 150px;
+        width: 150px;
+        left: 0;
+        top: -40px;
+    }
+
+    .sakura2 {
+        height: 150px;
+        width:150px;
+        bottom: -50px;
+    }
+
+
+    .part-rec div.active {
+        padding: 40px;
+    }
+
+    .par1-rec .photo-part,  .par2-rec .photo-part,  .par3-rec .photo-part,  .par4-rec .photo-part,  .par5-rec .photo-part,  .par6-rec .photo-part,  .par7-rec .photo-part,  .par8-rec .photo-part {
+        display:none;
+    }
+}

@@ -1,0 +1,848 @@
+/*******************HEADER******************/
+
+header{
+    width:100%;
+    height:80vh;
+
+    overflow: hidden;
+}
+
+.hamburguer-il:nth-child(3){
+    font-weight: 600;
+  }
+  
+
+.description-header{
+    height:20vh;
+    padding:0 30px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-header p{
+    font-size: clamp(1.3rem, 1.0667rem + 0.7778vw, 2rem);
+    font-weight: 600;
+}
+
+.hero-text h1:last-child {
+    margin-top: 0;
+    padding:0 30px;
+}
+
+.hero-text{
+    height:100%;
+    box-sizing: border-box;
+    display: flex;
+    margin:0;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(2rem, 1.8333rem + 0.5556vw, 2.5rem);
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+
+    font-family: var(--TitleFont);
+}
+
+.layer1 {
+    background-image: url("../assets/photos/tojimidday.png");
+    background-position: center 80%;
+}
+
+
+/******************* INTRO - ROUTES ******************/
+
+.routes-intro-container{
+    height:100vh;
+    width:100%;
+}
+
+.routes-intro{
+    height:100%;
+    width:100%;
+    display:flex;
+    box-sizing: border-box;
+}
+
+.col1-routes-intro, 
+.col3-routes-intro{
+    box-sizing: border-box;
+    padding:70px;
+    flex:2;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+
+.empty{
+    width:100%;
+    height:100%;
+}
+
+.col2-routes-intro{
+    flex:1;
+
+    display:flex;
+    align-items: center;
+}
+
+.col3-routes-intro{
+    flex:2;
+    text-align: right;
+}
+
+.pinky-map{
+    height:80%;
+    width:100%;
+
+    background-image: url("../assets/photos/pinkmap.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.text-intro-routes span{
+    font-weight: 600;
+}
+
+.titles{
+    margin: 150px 70px 30px;
+    font-family: var(--TitleFont);
+    color: var(--Purple);
+    font-size: var(--sizeTitle);
+}
+
+
+/******************* SLIDERS ******************/
+
+.slider-routes-container{
+    /* min-height:1; */
+    width:100%;
+    color:white;
+    background: var(--BlackGradient);
+}
+
+.slider-selection a{
+    color:white;
+}
+
+
+
+.slider-routes{
+    height:100%;
+    width:100%;
+
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+.slider-1, .slider-2, .slider-3{
+    display:flex;
+    min-height:110vh;
+}
+
+
+.slider-content, .slider-static{
+    height:100%;
+}
+
+.slider-content{
+    flex:2;
+}
+
+
+.slider-static{
+    flex:1;
+}
+
+.slider-content{
+    height:110vh;
+    width:100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+    box-sizing: border-box;
+    padding:70px;
+}
+
+.slider-1 .slider-content{
+    background-image: url("../assets/photos/tokyonight.jpg");
+}
+
+.slider-2 .slider-content{
+    background-image: url("../assets/photos/hokkaidonight.jpg");
+    order:2;
+}
+.slider-3 .slider-content{
+    background-image: url("../assets/photos/osakacastle.jpg");
+}
+
+.slider-photo{
+    margin-top: auto;
+    height:250px;
+    min-height: 150px; 
+    width:100%;
+}
+
+.slider-text p:first-child{
+    font-weight: 600;
+    color: pink;
+}
+
+.slider-photo{
+    background-position: center center;
+    background-size: cover;
+
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+.slider-static{
+    box-sizing: border-box;
+    padding:70px;
+}
+
+.slider-intro h1{
+    font-family: var(--TitleFont);
+    color: var(--Pink);
+    font-size: var(--sizeTitle);
+    font-weight: 300;
+}
+
+.slider-selection{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height:100px;
+    margin-bottom:30px;
+}
+
+.days, .days2, .days3{
+    position: relative;
+    z-index: 2;
+}
+
+.days::before, .days2::before, .days3::before   {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px; 
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: black;
+    background-clip: content-box;
+    transition: all 0.3s ease;
+}
+
+.days a:hover, .days2 a:hover, .days3 a:hover{
+    color:pink;
+}
+
+
+.slider-selection::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100%;
+    height: 1px; 
+    background-color: #ffffff; 
+}
+
+.slider-map{
+    margin-top: auto;
+    width:100%;
+    height:150px;
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.map-photo-slider{
+    height:100%;
+    width:90%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+    cursor:pointer;
+}
+
+.slider-1 .map-photo-slider{
+    background-image: url("../assets/photos/japanroutes.jpg");
+}
+
+.slider-2 .map-photo-slider{
+    background-image: url("../assets/photos/japanroutes3jpg.jpg");
+}
+
+.slider-3 .map-photo-slider{
+    background-image: url("../assets/photos/japanroutes2jpg.jpg");
+}
+
+/* .slider-1, .slider-2, .slider-3 {
+    flex-grow: 1;
+    min-height: 1000px; 
+    max-height: 1000px; 
+} */
+
+.map-photo-slider:hover{
+    box-shadow: 0px 0px 10px rgb(225, 0, 255);
+}
+
+.bigger{
+    position: relative;
+    height:20px;
+    width:20px;
+
+    background-image: url("../assets/photos/lupa.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+/******************* TRANSPORT ******************/
+
+.transport-container{
+    height:150vh;
+    width:100%;
+}
+.transport{
+    box-sizing: border-box;
+
+    height:100%;
+    width:70%;
+    margin: auto;
+}
+
+.part1-transport{
+    box-sizing: border-box;
+    height:100%;
+    width:100%;
+
+    display:flex;
+}
+
+.train-container{
+    height:50vh;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.train-photo{
+    height:60vh;
+    width:100%;
+
+    background-image: url("../assets/photos/bullettrain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+
+    box-shadow: rgba(246, 150, 255, 0.35) 0px 5px 15px;
+}
+
+.bus-container{
+    height:60vh;
+    width:100%;
+
+    display:flex;
+    flex-flow: column;
+}
+
+.bus-photo{
+    height:60vh;
+    width:100%;
+
+    background-image: url("../assets/photos/japanesetrain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    box-shadow: rgba(246, 150, 255, 0.35) 0px 5px 15px;
+}
+
+.text-train{
+    box-sizing: border-box;
+}
+
+.column1-transport{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width: calc(50% - 20px); 
+
+    margin-right:20px;
+    flex: 0 0 auto;
+}
+
+.column2-transport{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    min-height:100%;
+    width: calc(50% - 20px); 
+    margin-left:20px;
+    flex: 0 0 auto;
+}
+
+.title-trans{
+    height:20%;
+}
+
+.title-trans h1{
+    font-family: var(--TitleFont);
+    color: var(--Purple);
+    font-size: var(--sizeTitle);
+    font-weight: 300;
+}
+
+
+.ul-trans ul li{
+    list-style-image: url("../assets/photos/sakuraicon.png");
+}
+
+.text-train{
+    padding:20px;
+    box-sizing: border-box;
+}
+
+.ul-trans span{
+    font-weight: 600;
+}
+
+.jp-rail-container{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:100px;
+}
+
+.transport-container{
+    min-height: 80vh;
+    width: 100%;
+}
+
+.jp-rail-container{
+    margin-top: 30px;
+}
+
+.jp-rail{
+    height:100%;
+    width:70%;
+
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.part-jp{
+    height:100%;
+    flex:1;
+}
+
+.jp-rail .part-jp:first-child{
+    padding: 30px 30px 30px 0;
+    box-sizing: border-box;
+
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.jp-rail .part-jp:first-child span{
+    font-weight: 600;
+}
+
+.text-rail-pass{
+    margin-bottom:30px;
+}
+
+.jp-rail .part-jp:first-child .part-jp:last-child{
+    font-weight: 600;
+}
+
+
+.jp-rail .part-jp:last-child{
+    height:60vh;
+
+    
+    background-image: url("../assets/photos/railpass.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:70% 80%;
+
+    box-shadow: rgba(246, 150, 255, 0.35) 0px 5px 15px;
+}
+
+/**boton**/
+
+ .buttonblack {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+   }
+   
+   .buttonblack{
+    color:black;
+    border:2px solid var(--Purple);
+    color: #c210c2;
+   }
+
+   .buttonblack {
+    color: black;
+    background: var(--BlackLike);
+}
+
+
+ .buttonblack::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: rgb(247, 163, 212);
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+   }
+
+   .buttonblack::before{
+    background-color: rgb(234, 216, 236);
+   }
+   
+   .button .text, .buttonblack .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+   }
+
+   .buttonblack .text{
+    color:rgb(255, 255, 255);
+   }
+
+   .buttonblack{
+    color:black;
+   }
+   
+   .button .top-key, .buttonblack .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: rgb(228, 92, 171);
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+   }
+
+   .button .bottom-key-1, .buttonblack .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: rgb(228, 92, 171);
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+
+   .buttonblack .bottom-key-1{
+    background: rgba(204, 0, 255, 0.288);
+   }
+   
+   .button .bottom-key-2, .buttonblack .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: rgb(235, 171, 208);
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+
+   .buttonblack .bottom-key-2{
+    background: rgba(204, 0, 255, 0.288);
+   }
+   
+   /* .button:hover {
+    color: white;
+    background: black;
+   } */
+
+   .buttonblack:hover{
+    color:black;
+    background-color: var(--Pink);
+   }
+   
+   .button:hover::before {
+    width: 0.9375rem;
+    background: rgb(241, 225, 235);
+   }
+
+   .buttonblack:hover::before{
+    width: 0.9375rem;
+    background: rgb(255, 255, 255);
+   }
+   
+   .button:hover .text {
+    color: rgba(241, 199, 206, 0.623);
+    padding-left: 1.5em;
+   }
+
+   .buttonblack:hover .text{
+    color:black;
+    padding-left: 1.5rem;
+   }
+
+   .buttonblack:hover .text{
+    color:black;
+    padding-left: 1.5rem;
+   }
+   
+   .button:hover .top-key {
+    left: -2px;
+    width: 0px;
+   }
+
+   .buttonblack:hover .top-key{
+     left: -2px;
+    width: 0px;
+   }
+   
+   .button:hover .bottom-key-1,
+    .button:hover .bottom-key-2,
+    .buttonblack:hover .bottom-key-1,
+    .buttonblack:hover .bottom-key-2{
+    right: 0;
+    width: 0;
+   }
+
+
+.title-trans2 h1{
+    display:none;
+
+    font-family: var(--TitleFont);
+    color: var(--Purple);
+    font-size: var(--sizeTitle);
+    font-weight: 300;
+}                   
+
+   @media screen and (max-width:950px){
+    .slider-1, .slider-2, .slider-3{
+        flex-flow: column wrap;
+        min-height: 1000px; 
+    }
+
+
+    .slider-routes {
+        justify-content: space-around;
+    }
+
+    .slider-1 .slider-static, .slider-3 .slider-static{
+        order:1;
+    }
+
+    .slider-1 .slider-content, .slider-3 .slider-content{
+        order:2;
+    }
+}
+
+
+@media screen and (max-width:788px){
+
+    .routes-intro-container {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .routes-intro{
+        height: auto;
+    }
+
+    .col2-routes-intro {
+        display:none;
+    }
+
+    .col1-routes-intro, .col3-routes-intro {
+        text-align: justify;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+
+    .col1-routes-intro{
+        padding-right:20px;
+    }
+
+    .col3-routes-intro{
+        padding-left:20px;
+    }
+
+    .transport {
+        width: 100%;
+    }
+    .part1-transport {
+        min-height:9vh; 
+        flex-direction: column;
+        
+    } 
+
+    .column2-transport {
+        margin:0;
+        width: 100%;
+        min-height: 50vh;
+        justify-content: start;
+    }
+
+    .train-photo, .bus-photo{
+        height: auto;
+    }
+
+    .text-train {
+        box-sizing: border-box;
+        width:100%;
+        padding:40px;
+    }
+
+    .bus-photo{
+        min-height: 30vh;
+        width:100%;
+    }
+
+    .title-trans2 h1{
+        display:block;; 
+        margin-bottom:30px;
+        margin-left: 30px;
+    }  
+
+    .title-trans2{
+        margin-top:100px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .transport-container {
+        height: auto;
+        width: 100%;
+    }
+    
+    .jp-rail-container {
+        height: auto; 
+        width: 100%;
+    }
+    .jp-rail-container {
+        min-height:50vh;
+        width: 100%;
+    }
+
+    .column1-transport {
+        display:none;
+    }
+
+    .jp-rail {
+        flex-direction: column;
+        height:30vh;
+        width: 90%;
+    }
+
+    .jp-rail .part-jp:last-child {
+        display:none;
+    }
+
+    .jp-rail .part-jp:first-child {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:620px){
+
+    .empty{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width:530px){
+
+    .routes-intro{
+        flex-flow: column nowrap;
+    }
+
+
+    .col1-routes-intro, .col3-routes-intro {
+        padding:0;
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+    .col3-routes-intro {
+       justify-content: flex-start;
+    }
+
+    .col1-routes-intro {
+        justify-content: flex-end;
+     }
+ 
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 380px) {
+    .jp-rail-container {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (width: 326px) and (height: 830px) {
+    .jp-rail-container {
+        margin-top: 150px;
+    }
+}

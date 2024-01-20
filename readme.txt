@@ -1,0 +1,1 @@
+- I have never done any sliders before in my life, and I tried to do them manually, so I'm sorry if they look a bit off or at least not how I would have wanted them to look like.

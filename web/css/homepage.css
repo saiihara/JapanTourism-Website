@@ -1,0 +1,1094 @@
+.clearfix {
+    clear: both;
+  }
+
+/*******************HEADER******************/
+
+header{
+    width:100%;
+    height:100vh;
+
+    overflow: hidden;
+}
+
+
+.collapsable-menu ul{
+    padding:0;
+    margin:0;
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    margin:0;
+    padding:0;
+}
+
+
+nav{
+    height:10vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    margin:0 40px;
+
+}
+
+.hamburguer-il:first-child{
+    font-weight: 600;
+}
+
+.logo-container{
+    min-width:200px;
+    height:40%;
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-image: url("../assets/photos/logowhite.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+    width:100%;
+    height:100%;
+}
+
+
+.layer1{
+    background-image: url("../assets/photos/sakuraHeader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    width:100%;
+    height:100%;
+}
+
+
+.hero-text h1{
+    color:white;
+    font-weight: 300;
+    position: relative;
+}
+
+.hero-text span{
+    font-weight: 600;
+}
+
+.hero-text{
+    height:90vh;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    margin-left:70px;
+    margin-top:-50px;
+
+    font-size: clamp(1.1rem, 0.8667rem + 0.7778vw, 1.8rem);
+
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+
+.hero-text h1:last-child{
+    margin-top:-20px;
+    
+}
+
+/*******************INTRODUCTION******************/
+
+.introduction-container{
+    height:80vh;
+    width:100%;
+
+    box-sizing: border-box;
+
+    display:flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.introduction{
+    width:60%;
+    height:70%;
+    box-sizing: border-box;
+
+    display:flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.part1-intro, .part2-intro{
+    height:100%;
+    min-width: 200px;
+}
+
+.part1-intro h1{
+    font-family: var(--TitleFont);
+    color: var(--Purple);
+    font-size: var(--sizeTitle);
+    font-weight: 300;
+}
+
+.part1-intro span{
+    font-weight: 600;
+}
+
+.part1-intro{
+    display:flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    flex:2;
+}
+
+.part2-intro p {
+    writing-mode: vertical-rl;
+    font-size: clamp(8rem, 7.3333rem + 2.2222vw, 10rem);
+    background: url("../assets/photos/womanclothesjp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    font-family: var(--JapaneseFont);
+    font-weight: 800;
+
+    margin:0;
+    padding:0;
+}
+
+.part2-intro{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin:0;
+    padding:0;
+    flex:1;
+}
+
+
+/*******************SECTION 1************ ******/
+
+.first-section-container {
+    height: 200vh;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.first-section {
+    color: white;
+    background: var(--BlackGradient);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.column1,
+.column2 {
+    flex: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-column2{
+    order:1;
+}
+
+.tokyo-night-container{
+    order:2;
+}
+
+.umbrella-woman-container,
+.tokyo-night-container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.umbrella-woman,
+.tokyo-night {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.umbrella-woman {
+    background-image: url("../assets/photos/kimonogirlsakura.jpg");
+    transform: translate(0, 45px);
+}
+
+.tokyo-night {
+    background-image: url("../assets/photos/tokyocity-min.jpg");
+    transform: translate(0, -45px);
+}
+
+.text-column1,
+.text-column2 {
+    height: 100%;
+    width:80%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+}
+
+.text-column2{
+padding-left:35px;
+}
+
+.text-column2 p,
+.text-column1 p{
+    margin: 0;
+    margin-top:15px;
+
+}
+.text-column2 h1,
+.text-column1 h1 {
+    font-family: var(--TitleFont);
+    color: var(--Pink);
+    font-size: var(--sizeTitle);
+    font-weight: 300;
+    margin: 0;
+    margin-bottom:15px;
+}
+
+
+/*******************SECTION 2******************/
+
+.second-section-container{
+    height:80vh;
+    width:100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section-photo:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.second-section{
+    height:100%;
+    width:80%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section-text{
+    flex:2;
+}
+
+.second-section-photo-container{
+    flex:1;
+}
+
+.second-section-photo-container{ 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section-photo{
+    min-width: 400px;
+    min-height: 400px;
+    border-radius: 50%;
+
+    background: url("../assets/photos/ancient-painting.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    transition: all .3s ease;
+}
+
+.second-section-text{
+    margin-right: 40px;
+}
+
+.second-section-text h1{
+    font-size: var(--sizeTitle);
+    font-family: var(--TitleFont);
+    color: var(--Purple);
+    font-weight: 300;
+}
+
+.second-section-text span{
+    font-weight: 600;
+}
+
+/*******************HISTORY******************/
+
+.history-container{
+    height:250vh;
+    width:100%;
+}
+
+.history{
+    width:100%;
+    height:100%;
+
+    background: var(--BlackGradient);
+
+    display:flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+/*******PART 1************/
+.part1{
+    margin-top:100px;
+    height: 70vh;
+    width:85%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+}
+
+.text-history, .image-history{
+    flex:2;
+}
+
+.square-history{
+    flex:1;
+    border:1px solid var(--BrownWhite);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+    box-sizing: border-box;
+    padding: 20px 0;
+
+    position: relative;
+    height: 143px; 
+    max-width: 85%;
+
+    border:1px solid var(--BrownWhite);
+}
+
+
+.square-history p:nth-child(2), .image-text-history p{
+    font-size: clamp(0.8rem, 0.8rem + 0vw, 0.8rem);
+    text-align: center;
+}
+
+.square-history p:nth-child(2){
+    margin-top:-15px;
+}
+
+.square-history p:first-child{
+    font-weight: 600;
+    color: var(--BrownWhite);
+}
+
+.square-history p:nth-child(2){
+    box-sizing: border-box;
+    padding:10px;
+}
+
+.image-history{
+    height:100%;
+    width:100%;
+
+    display:flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.img-his{
+    height:90%;
+    width:75%;
+
+    background: url("../assets/photos/samurai.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.text-history{
+    height:100%;
+    box-sizing: border-box;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    font-size: clamp(0.9rem, 0.8rem + 0.3333vw, 1.2rem);
+}
+
+.text-history p{
+    padding:0 60px;
+    box-sizing: border-box;
+}
+
+.image-text-history p:first-child{
+    font-weight: 600;
+    margin-bottom:-10px;
+}
+.text-history span{
+    font-weight: 600;
+}
+
+/*********PART 2*************/
+
+.part2{
+    margin-top:100px;
+    height: 70vh;
+    width:85%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+}
+
+.part2 .text-history {
+    order:3;
+}
+
+
+.part2 .square-history{
+    order:2;
+}
+
+.part2 .image-history{
+    order:1;
+}
+
+.part2 .img-his{
+    height:90%;
+    width:75%;
+
+    background: url("../assets/photos/meiji.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/**3**/
+
+.part3{
+    margin-top:100px;
+    height: 70vh;
+    width:85%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+
+    margin-bottom: 100px
+}
+
+.part3 .img-his{
+    height:90%;
+    width:75%;
+
+    background: url("../assets/photos/propaganda.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/**************LINE*************/
+.history {
+    position: relative;
+}
+
+.history:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: var(--BrownWhite);
+    z-index:10;
+    margin-top: 150px;
+    margin-bottom:150px;
+    box-sizing: border-box;
+    
+}
+
+.square-history {
+    position: relative;
+    z-index:800;
+
+    background-color: var(--BlackLike);
+
+}
+
+
+/**************GALLERY*************/
+
+.gallery-container h1{
+    margin:80px 0;
+    margin-left: 70px;
+
+    font-size: var(--sizeTitle);
+    font-family: var(--TitleFont);
+    color: var(--Purple);
+    font-weight: 300;
+}
+.gallery-container{
+    margin-top:150px;
+    height:220vh;
+    width:100%;
+}
+
+.gallery{
+    height:100%;
+    width:100%;
+}
+
+.part1-gallery, .part2-gallery{
+    height:100vh;
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.osaka, .yoshino{
+    height:100%;
+    background-color: rgba(0, 255, 255, 0.447);
+    flex:1;
+
+    background: url("../assets/photos/uenoparksakura.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.yoshino{
+    order:2;
+}
+
+.two-photos{
+    height:100%;
+    flex:1;
+
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2-gallery .two-photos{
+    order:1;
+}
+
+.toji{
+    height:100%;
+    width:100%;
+    background-color: rgba(255, 0, 0, 0.416);
+
+    background: url("../assets/photos/fujiparksunset.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.yoshino{
+    height:100%;
+    width:100%;
+    background-color: rgba(255, 0, 0, 0.416);
+
+    background: url("../assets/photos/yoshinopark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.ozi{
+    height:100%;
+    width:100%;
+    background-color: rgba(255, 0, 0, 0.416);
+
+    background: url("../assets/photos/ozepark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.shinto{
+    height:100%;
+    width:100%;
+    background-color: rgba(255, 0, 0, 0.416);
+
+    background: url("../assets/photos/toriparkgate.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.nikko{
+    width:100%;
+    height:100%;
+    background-color: rgba(255, 255, 0, 0.377);
+
+    background: url("../assets/photos/nikkopark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.osaka, .toji, .nikko, .yoshino, .ozi, .shinto {
+    position: relative;
+}
+
+.description h1{
+    font-size: var(--sizeTitle);
+    font-family: var(--TitleFont);
+    color: pink;
+    font-weight: 300;
+
+    margin:0;
+}
+.description p{
+    font-size: clamp(0.5rem, 0.5333rem + 0.5556vw, 1rem);
+    padding:50px;
+    box-sizing: border-box;
+}
+
+.toji .description p,
+.nikko .description p,
+.ozi .description p,
+.shinto .description p
+{
+    padding:0px 50px;
+    box-sizing: border-box;
+}
+.osaka:hover .description, .toji:hover .description, .nikko:hover .description, .yoshino:hover .description, .ozi:hover .description, .shinto:hover .description    {
+    opacity: 1;
+}
+
+/**********************WHERE TO STAY********************/
+
+.where-stay-container{
+    height:100vh;
+    width:100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.where-stay{
+    height:100%;
+    width:90%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stay-text{
+    flex:1;
+    height:100%;
+    width:100%;
+
+    display:flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+    padding:70px;
+    box-sizing: border-box;
+}
+
+.stay-text .button-stay{
+    margin-top:20px;
+}
+
+.ul-stay li{
+    list-style-image: url("../assets/photos/sakuraicon.png");
+}
+
+.ul-stay ul{
+    padding-left:20px;
+}
+
+.ul-stay li{
+    padding-left: 10px;
+}
+
+.ryokan{
+    flex:1;
+    height:100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ryokan-photo{
+    min-width: 500px;
+    min-height: 500px;
+    border-radius: 50%;
+
+    background: url("../assets/photos/ryokan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.ryokan-photo:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.stay-text h1{
+    font-size: var(--sizeTitle);
+    font-family: var(--TitleFont);
+    color: var(--Purple);
+    font-weight: 300;
+}
+
+.stay-text span{
+    font-weight: 600;
+}
+
+
+/**********************SAKURA GIRL********************/
+
+.sakura-girl-container{
+    height:100vh;
+    width:100%;
+
+    margin-top:20px;
+}
+
+.sakura-girl{
+    height:100%;
+    width:100%;
+
+    background: url("../assets/photos/sakurawoman.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    box-shadow: inset 0px 22px 70px 4px rgba(0, 0, 0, 0.56);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.sakura-texts{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    font-weight: 600;
+    padding:30px;
+    color:white;
+    text-shadow: 0px 0px 6px rgba(252, 133, 236, 0.7);
+}
+
+
+.sakura-texts p:first-child{
+    margin-bottom:0;
+    font-family: var(--JapaneseFont);
+    font-size: clamp(2rem, 1.6667rem + 1.1111vw, 3rem);
+}
+
+.sakura-texts p:last-child{
+    margin-top:15px;
+    font-size: clamp(0.9rem, 0.7rem + 0.6667vw, 1.5rem);
+}
+
+.img-his:hover{
+    cursor:pointer;
+}
+
+/********************** MEDIA QUERIES ********************/
+
+@media screen and (max-width: 1050px){
+    
+    .where-stay {
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+    .ryokan-photo {
+       display:none;
+    }
+
+    .where-stay-container {
+        height: 80vh;
+    }
+}
+
+
+@media screen and (max-width: 825px){
+    
+    .second-section-photo-container{
+        display: none;
+    }
+
+    .second-section-container {
+        height: 70vh;
+    }
+}
+  
+
+@media screen and (max-width: 750px){
+    
+   
+    .history::before{
+        content:none;
+    }
+
+
+    .history-container{
+        height:350vh;
+    }
+
+
+    .part1, .part2, .part3 {
+        flex-direction: column;
+        height: 100vh;
+        width:100%;
+    }
+
+    .square-history {
+        order: 1;
+        width:100%;
+        padding:0;
+    }
+
+    .text-history {
+        order: 2;
+        box-sizing: border-box;
+    }
+
+    .image-history {
+        order: 3;
+    }
+
+    .history{
+        justify-content: space-around;
+    }
+    
+
+    .part2 .image-history{
+        order:3
+    }
+
+    .part1 .img-his, .part2 .img-his {
+        height: 100%;
+        width: 100%;
+
+        background-position: 70% 30%;
+    }
+
+    .part3 .img-his{
+        background-position: 50% 10%;
+    }
+
+    .part2 .img-his, .part3 .img-his{
+        width:100%;
+    }
+
+}
+  
+
+@media screen and (max-width: 650px){
+    
+    .introduction-container {
+        height: 70vh;
+    }
+
+    .introduction{
+        width:80%;
+    }
+
+    .part2-intro{
+        display:none;
+    }
+    .first-section {
+        flex-direction: column;
+    }
+    .column1{
+        flex-direction: column-reverse;
+    }
+
+    .umbrella-woman {
+        transform: translate(0, 0px);
+        background-position: center center;
+    }
+    
+    .tokyo-night {
+        transform: translate(0, 0px);
+        background-position: center center;
+    }
+
+    .tokyo-night-container{
+        order:2;
+    }
+
+    .text-column2{
+        order:1;
+        padding:0;
+    }
+
+    .first-section-container{
+        height:230vh;
+    }
+
+    .umbrella-woman, .tokyo-night {
+        height: 90%;
+    }
+
+    .tokyo-night{
+        transform: translate(0, 40px);
+    }
+    
+}
+
+
+@media screen and (max-width: 630px){
+   
+
+
+    /* .gallery-container {
+        height:230vh;
+    } */
+    .auto-height {
+        height: auto !important;
+      }
+
+    .gallery{
+        padding-top:150px;
+        padding-bottom:150px;
+        width:100%;
+      }
+
+
+
+    .title-h1{
+        margin:80px 0;
+    }
+    
+    
+      .part1-gallery, .part2-gallery {
+        flex-direction: column;
+      }
+    
+      .two-photos{
+        width:100%;
+      }
+
+    
+      .description {
+        height:50vh;
+        position: relative; 
+      }
+
+
+    .osaka p,
+    .yoshino p
+    {
+        padding:0px 50px;
+        box-sizing: border-box;
+    }
+
+    
+}
+
+
+.sakura-girl {
+    background-position: 80% center;
+}
+
+
+@media screen and (max-width:420px){
+    
+    .hero-text{
+        padding:0;
+        margin:0;
+
+        margin:0 auto;
+        padding:20px;
+    }
+
+    .gallery-container h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .title-h1{
+        margin:100px 0;
+    }
+    
+
+    .where-stay-container{
+        margin-bottom:80px;
+    }
+    
+}
+
